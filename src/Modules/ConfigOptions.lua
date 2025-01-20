@@ -1132,6 +1132,15 @@ Huge sets the radius to 11.
 	{ var = "conditionDodgeRolledRecently", type = "check", label = "Have you Dodge Rolled Recently?", ifCond = "DodgeRolledRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:DodgeRolledRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },
+	{ var = "conditionConsumedEnduranceChargeRecently", type = "check", label = "Have you consumed an Endurance Charge Recently?", ifCond = "ConsumedEnduranceChargeRecently", apply = function(val, modList, enemyModList)
+		modList:NewMod("Condition:ConsumedEnduranceChargeRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
+	end },
+	{ var = "conditionConsumedFrenzyChargeRecently", type = "check", label = "Have you consumed a Frenzy Charge Recently?", ifCond = "ConsumedFrenzyChargeRecently", apply = function(val, modList, enemyModList)
+		modList:NewMod("Condition:ConsumedFrenzyChargeRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
+	end },
+	{ var = "conditionConsumedPowerChargeRecently", type = "check", label = "Have you consumed a Power Charge Recently?", ifCond = "ConsumedPowerChargeRecently", apply = function(val, modList, enemyModList)
+		modList:NewMod("Condition:ConsumedPowerChargeRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
+	end },
 	{ var = "conditionEnergyShieldRechargeRecently", type = "check", label = "^x88FFFFEnergy Shield ^7Recharge started Recently?", ifCond = "EnergyShieldRechargeRecently", apply = function(val, modList, enemyModList)
 		modList:NewMod("Condition:EnergyShieldRechargeRecently", "FLAG", true, "Config", { type = "Condition", var = "Combat" })
 	end },

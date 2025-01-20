@@ -1787,9 +1787,12 @@ local modTagList = {
 		{ type = "StatThreshold", stat = "ManaReserved", threshold = 1} } },
 	["if you've shattered an enemy recently"] = { tag = { type = "Condition", var = "ShatteredEnemyRecently" } },
 	["if you've dodge rolled recently"] = { tag = { type = "Condition", var = "DodgeRolledRecently" } },
+	["if you've consumed an endurance charge recently"] = { tag = { type = "Condition", var = "ConsumedEnduranceChargeRecently" } },
+	["if you've consumed a frenzy charge recently"] = { tag = { type = "Condition", var = "ConsumedFrenzyChargeRecently" } },
+	["if you've consumed a power charge recently"] = { tag = { type = "Condition", var = "ConsumedPowerChargeRecently" } },
 	-- Enemy status conditions
 	["at close range"] = { tag = { type = "Condition", var = "AtCloseRange" } },
-	["against rare and unique enemies"] = { tag = { type = "ActorCondition", actor = "enemy", var = "RareOrUnique" } },
+	["against rare [ao][nr]d? unique enemies"] = { tag = { type = "ActorCondition", actor = "enemy", var = "RareOrUnique" } },
 	["by s?l?a?i?n? rare [ao][nr]d? unique enemies"] = { tag = { type = "ActorCondition", actor = "enemy", var = "RareOrUnique" } },
 	["against unique enemies"] = { tag = { type = "ActorCondition", actor = "enemy", var = "RareOrUnique" } },
 	["against enemies on full life"] = { tag = { type = "ActorCondition", actor = "enemy", var = "FullLife" } },
